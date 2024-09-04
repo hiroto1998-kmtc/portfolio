@@ -1,219 +1,49 @@
+/* ベーススタイル */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
 
-<!--HTMLの宣言-->
-<!DOCTYPE html>
+/* ヘッダー */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
 
-<!--言語の設定-->
-<html lang="ja">
+/* ナビゲーションメニュー */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
 
-<head>
-<!--文字コードの指定-->
-<meta charset="UTF-8">
-<!-- SEO用のメタタグ：キーワードを定義 -->
-<meta name="keywords" content="科学技術,イノベーション,moonshot,ムーンショット,ムーンショット目標,研究開発">
-<!-- ページの説明文を定義 -->
-<meta name="description" content="ムーンショット目標">
-<!-- モバイルデバイスのテーマカラーを設定 -->
-<meta name="theme-color" content="#004697">
-<!-- Open Graph（OG）プロトコル用のメタタグ：SNSなどでシェアされる際の情報を定義 -->
-<meta property="og:site_name" content="内閣府ホームページ">
-<meta property="og:title" content="">
-<meta property="og:image" content="https://www.cao.go.jp/common4/img/ogp_image001.jpg">
-<meta property="og:description" content="">
-<meta property="og:type" content="article">
-<meta property="og:url" content="">
-<!--ページのタイトル（tabに表示される）-->
-<title>ムーンショット目標 - 科学技術政策 - 内閣府</title>
-<!-- レスポンシブデザイン用のビューポート設定 -->
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<!-- 電話番号の自動リンク化を防止 -->
-<meta name="format-detection" content="telephone=no">
-<!-- CSSファイルのリンク -->
-<link rel="stylesheet" href="https://www.cao.go.jp/common4/css/import.css">
-<link rel="stylesheet" href="https://www.cao.go.jp/common4/css/print.css" media="print">
-<link rel="stylesheet" href="../common/css/cstp_style.css" media="screen,print">
-<!-- JavaScriptファイルのリンク -->
-<script src="https://www.cao.go.jp/common4/js/jquery.min.js"></script>
-<script src="https://www.cao.go.jp/common4/js/function.js"></script>
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
 
-</head>
-<body>
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
 
-<div id="container" class="standard">
-<div id="containerInner">
-<div id="containerInner2">
+/* メインコンテンツ */
+main {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+}
 
-<header id="headerArea" role="banner">
-<!-- ================================== headerArea Start ================================== -->
-  <div id="headerBlock">
-    <div id="headerBlockInner">
-      <div id="headerBox">
-        <div id="spCiBlock">
-          <a href="https://www.cao.go.jp/">
-            <img src="https://www.cao.go.jp/common4/img/logo_pc.svg" alt="内閣府 Cabinet Office, Government of Japan" role="img" class="pcDisp">
-            <img src="https://www.cao.go.jp/common4/img/logo_sp.svg" alt="内閣府" role="img" class="spDisp">
-          </a>
-        </div>
-      </div>
-    <!-- headerBlockInner End --></div>
-  <!-- headerBlock End --></div>
-
-  <nav id="topicPathBlock" role="navigation" aria-label="現在位置"><!-- topicPathBlock Start-->
-    <ul>
-      <li><a href="https://www.cao.go.jp/">内閣府ホーム</a></li>
-      <li><a href="https://www.cao.go.jp/seisaku/seisaku.html">内閣府の政策</a></li>
-      <li><a href="../stmain.html">科学技術・イノベーション</a></li>
-      <li><a href="index.html">ムーンショット型研究開発制度</a></li>
-      <li><span aria-current="page">ムーンショット目標</span></li>
-    </ul>
-  <!-- topicPathBlock End --></nav>
-<!-- ********************************** ヘッダー ここまで ********************************** -->
-</header>
-
-
-
-<div id="contentsArea" class="contents">
-<!-- ********************************** コンテンツ全体 ここから ********************************** -->
-<main id="contents" role="main">
-<h1>ムーンショット目標 </h1>
-<ul class="switchLang">
-<li><a href="../english/moonshot/target_en.html" class="bulletLink">英語(<span lang="en">English</span>)</a></li>
-</ul>
-
-<div id="mainContentsBlock"><!-- mainContentsBlock Start -->
-<div id="mainContents"><!-- mainContentsBlock Start -->
-<!-- ================================== コンテンツ ここから ================================== -->
-<div class="linkBox">
-<ul class="bulletList">
-<li><a href="#a1">ムーンショット目標</a></li>
-<li><a href="#a2">各目標紹介ページ</a></li>
-<li><a href="#a3">目標決定文書</a></li>
-</ul>
-</div>
-
-<h2 id="a1">ムーンショット目標</h2>
-<ul>
-    <li>全ての目標は「人々の幸福(Human Well-being)」の実現を目指し、掲げられています。</li>
-    <li>将来の社会課題を解決するために、人々の幸福で豊かな暮らしの基盤となる以下の３つの領域から、具体的な10個の目標を決定しています。[総合科学技術・イノベーション会議決定（目標１～６：令和２年１月２３日、目標８，９：令和３年９月２８日、目標１０：令和５年12月26日）、健康・医療戦略推進本部決定（目標７：令和２年７月１４日）]</li>
-</ul>
-<ol class="numList">
-    <li>社会：急進的イノベーションで少子高齢化時代を切り拓く。[課題：少子高齢化、労働人口減少 等]</li>
-    <li>環境：地球環境を回復させながら都市文明を発展させる。[課題：地球温暖化、海洋プラスチック、資源の枯渇、環境保全と食料生産の両立 等]</li>
-    <li>経済：サイエンスとテクノロジーでフロンティアを開拓する。[課題：Society5.0実現のための計算需要増大、人類の活動領域拡大 等]</li>
-</ol>
-
-<h2 id="a2">各目標紹介ページ</h2>
-<ul class="flexCard">
-  <li>
-    <a href="sub1.html">
-      <img src="goal1pic.png" alt="">
-      <span>ムーンショット目標１</span>
-      <p>2050年までに、人が身体、脳、空間、時間の制約から解放された社会を実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub2.html">
-      <img src="goal2pic.png" alt="">
-      <span>ムーンショット目標２</span>
-      <p>2050年までに、超早期に疾患の予測・予防をすることができる社会を実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub3.html">
-      <img src="goal3pic.png" alt="">
-      <span>ムーンショット目標３</span>
-      <p>2050年までに、AIとロボットの共進化により、自ら学習・行動し人と共生するロボットを実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub4.html">
-      <img src="goal4pic.png" alt="">
-      <span>ムーンショット目標４</span>
-      <p>2050年までに、地球環境再生に向けた持続可能な資源循環を実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub5.html">
-      <img src="goal5pic.png" alt="">
-      <span>ムーンショット目標５</span>
-      <p>2050年までに、未利用の生物機能等のフル活用により、地球規模でムリ・ムダのない持続的な食料供給産業を創出</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub6.html">
-      <img src="goal6pic.png" alt="">
-      <span>ムーンショット目標６</span>
-      <p>2050年までに、経済・産業・安全保障を飛躍的に発展させる誤り耐性型汎用量子コンピュータを実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub7.html">
-      <img src="goal7pic.png" alt="">
-      <span>ムーンショット目標７</span>
-      <p>2040年までに、主要な疾患を予防・克服し100歳まで健康不安なく人生を楽しむためのサステイナブルな医療・介護システムを実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub8.html">
-      <img src="goal8pic.png" alt="">
-      <span>ムーンショット目標８</span>
-      <p>2050年までに、激甚化しつつある台風や豪雨を制御し極端風水害の脅威から解放された安全安心な社会を実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub9.html">
-      <img src="goal9pic.png" alt="">
-      <span>ムーンショット目標９</span>
-      <p>2050年までに、こころの安らぎや活力を増大することで、精神的に豊かで躍動的な社会を実現</p>
-    </a>
-  </li>
-  <li>
-    <a href="sub10.html">
-      <img src="goal10pic.png" alt="">
-      <span>ムーンショット目標１０</span>
-      <p>2050年までに、フュージョンエネルギーの多面的な活用により、地球環境と調和し、資源制約から解き放たれた活力ある社会を実現</p>
-    </a>
-  </li>
-</ul>
-
-
-
-<h2 id="a3">目標決定文書『ムーンショット型研究開発制度が目指すべき「ムーンショット目標」について』</h2>
-<ul class="bulletList">
-    <li><a href="mokuhyou.pdf" target="_blank">目標１～６（総合科学技術・イノベーション会議、令和2年1月23日決定）（PDF形式：1,564KB）<img src="https://www.cao.go.jp/common4/img/ico_pdf.svg" width="16" height="16" alt="PDFを別ウィンドウで開きます" class="ico"></a></li>
-    <li><a href="mokuhyou_iryou.pdf" target="_blank">目標７（健康・医療戦略推進本部、令和2年7月14日決定）（PDF形式：254KB）<img src="https://www.cao.go.jp/common4/img/ico_pdf.svg" width="16" height="16" alt="PDFを別ウィンドウで開きます" class="ico"></a></li>
-    <li><a href="mokuhyou_8_9.pdf" target="_blank">目標８，９（総合科学技術・イノベーション会議、令和3年9月28日決定）（PDF形式：614KB）<img src="https://www.cao.go.jp/common4/img/ico_pdf.svg" width="16" height="16" alt="PDFを別ウィンドウで開きます" class="ico"></a></li>
-    <li><a href="mokuhyou_10.pdf" target="_blank">目標10(総合科学技術・イノベーション会議、令和5年12月26日決定)(PDF形式：505KB)<img src="https://www.cao.go.jp/common4/img/ico_pdf.svg" width="16" height="16" alt="PDFを別ウィンドウで開きます" class="ico"></a></li>
-</ul>
-
-
-<!-- ================================== コンテンツ ここまで ================================== -->
-
-
-<div class="pageTop"><a href="#container">このページの先頭へ</a></div>
-</div>
-</div>
-</main>
-</div>
-<footer id="footerArea" role="contentinfo">
-<!-- ********************************** フッター ここから ********************************** -->
-<div id="footerNavBlock"><!-- footerNavBlock Start -->
-<ul id="list_footerNav" class="bullet02">
-<li><span><a href="../webaccessibility.html">ウェブアクセシビリティ</a></span></li>
-<li><span><a href="../sitemap.html">サイトマップ</a></span></li>
-</ul>
-<!-- footerNavBlock End --></div>
-
-<div id="copyrightBlock"><!-- copyrightBlock Start -->
-<div>
-<address><img src="https://www.cao.go.jp/common4/img/logo_footer.svg" alt="内閣府 Cabinet Office, Government of Japan"><span>〒100-8914　東京都千代田区永田町1-6-1<br>電話番号　03-5253-2111（大代表）</span></address>
-<p>内閣府法人番号 2000012010019</p>
-<p id="txt_copyright" lang="en">&copy; Cabinet Office, Government of Japan</p>
-</div>
-</div>
-</footer>
-</div>
-</div>
-</div>
-
-</body>
-</html>
+/* フッター */
+footer {
+    background-color: #2f00ff;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
