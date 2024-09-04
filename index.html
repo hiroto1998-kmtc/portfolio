@@ -1,49 +1,82 @@
-/* ベーススタイル */
-body {
-    font-family: 'Times New Roman', Times, serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
 
-/* ヘッダー */
-header {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
+<!--htmlの宣言-->
+<!DOCTYPE html>
 
-/* ナビゲーションメニュー */
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
+<!--言語の指定-->
+<html lang="ja">
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
+<!--ヘッダーはウェブページ全体を指定-->
+<head>
+    <!--文字コードの指定-->
+    <meta charset="utf-8">
+    <!--以下の属性（meta name）を指定することにより見やすい表示領域となる。属性はいくつかある-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>企業ホームページ</title>
+    <!--CSSの指定-->
+    <link rel="stylesheet" href="20240729.css">
+    <!--javascriptの指定-->
+    <script src="paiza.js"></script>
+</head>
 
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
+<!--ボディは実際の内容を記述-->
+<body>
+    <header>
+        <h1>xxソリューション</h1>
+        <!--他の文書へ誘導するナビゲーションリンク-->
+        <nav>
+            <ul>
+                <li><a href="#about">会社概要</a></li>
+                <li><a href="#services">サービス</a></li>
+                <li><a href="#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about">
+            <h2>会社概要</h2>
+            <p>私はHTML, CSSを使用したコーディングによって企業活動のお手伝いをさせていただきます。</p>
 
-/* メインコンテンツ */
-main {
-    padding: 20px;
-    background-color: white;
-    margin: 20px;
-}
+            <!--<br>は改行-->
+           <!--<p>データ入力<br>継続的に案件を受けております。</p>--> 
+            <!--<strong>は太字-->
+            <!--<strong><p>　</p></strong>-->
 
-/* フッター */
-footer {
-    background-color: #2f00ff;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+            <p>実績はまだありません。</p>
+        </section>
+        
+        <section id="services">
+            <h2>サービス</h2>
+            <div class="service">
+                <h3>HTML, CSS</h3>
+                <p>ウェブサイトの制作を手助けします。</p>
+            </div>
+            <div class="service">
+                <h3>VBA</h3>
+                <p>Excelを使用した業務の効率化を手助けします。</p>
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2>お問い合わせ</h2>
+            <form action="submit_form.php" method="post">
+                <label for="name">名前:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">メール:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="message">メッセージ:</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">送信</button>
+            </form>
+            <p>電話番号はxxx-xxxx-xxxx</p>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 xxソリューション</p>
+    </footer>
+</body>
+</html>
